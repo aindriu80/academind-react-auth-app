@@ -1,0 +1,1 @@
+# academind-react-auth-app
