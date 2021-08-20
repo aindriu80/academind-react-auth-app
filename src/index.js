@@ -6,10 +6,11 @@ import App from './App'
 import { AuthContextProvider } from './store/authContext'
 
 ReactDOM.render(
-  // <AuthContextProvider>
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
-  // </AuthContextProvider>,
+  <AuthContextProvider>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+    ,
+  </AuthContextProvider>,
   document.getElementById('root')
 )
