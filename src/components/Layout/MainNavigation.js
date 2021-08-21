@@ -11,7 +11,6 @@ const MainNavigation = () => {
 
   const logoutHandler = () => {
     authCtx.logout()
-    // optional redirect the user
   }
 
   return (
@@ -32,6 +31,7 @@ const MainNavigation = () => {
               <Link to="/profile">Profile</Link>
             </li>
           )}
+
           {isLoggedIn && (
             <li>
               <button onClick={logoutHandler}>Logout</button>
